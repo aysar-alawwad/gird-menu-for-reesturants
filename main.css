@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+ul {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  padding-left: 0px !important;
+}
+
+ul li {
+  padding: 5px 0px;
+}
+ul li:hover {
+  background-color: #ddd;
+  border-right: 4px solid;
+}
+ul li a {
+  margin-left: 40px;
+  text-decoration: none !important;
+  color: #333;
+}
+ul li a svg {
+  margin-right: 10px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #ccc;
+}
+.sidebar p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 24px;
+  padding-bottom: 80px;
+}
+.main {
+  background-color: white;
+  margin-left: 250px;
+  width: 100%;
+}
+.main nav {
+  display: flex;
+
+  height: 70px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.search-container .search-box {
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 400px;
+}
+.search-box button{
+  margin-left: 15px;
+}
+.search-box button svg{
+  color: #333;
+}
+.search-container input[type="text"] {
+  border: 1px solid #333;
+  outline: none;
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 50px;
+}
+
+.search-container button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+}
+.ShopInfo {
+  position: absolute;
+  right: 20px;
+}
+.ShopInfo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ShopInfo p svg {
+  margin-left: 10px;
+}
+.gridcontainer {
+  margin-left: 70px;
+  margin-right: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+.column {
+  flex-basis: calc(100% / 7);
+  max-width: calc(100% / 7);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 2px 10px 7px;
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-button {
+  padding: 2px 12px;
+  background-color: #cccccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.card-topic {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+  font-size: 12px;
+}
+
+.gird-nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gird-nav1 h2 {
+  margin-left: 80px;
+}
+.gird-nav1 .grid-buttons {
+  margin-right: 40px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border: 1px solid;
+}
+.active {
+  color: #333;
+  background-color: #ccc;
+  padding:5px 20px;
+  border: none !important;
+}
+
+.language-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 180px;
+  top: 20%;
+}
+.sidebarLinks {
+  /* padding-bottom: 40px !important; */
+  border-bottom: 1px solid;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.grid-buttons {
+  display: flex;
+}
+.grid-buttons button {
+  margin: 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+.update {
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 190px;
+
+
+  
+  text-decoration: underline;
+}
+.update svg{
+  margin-right: 5px;
+}
+.cardmain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
